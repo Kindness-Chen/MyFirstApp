@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">屹通通用基础库</string>
+    
+    <string name="HijackingTip">应用程序进入后台</string>
+
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myfirstapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- APK资源分包需要用到的权限 -->
+    <!-- Required to access Android Market Licensing -->
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" /> <!-- Required to keep CPU alive while downloading files (NOT to keep screen awake) -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required to poll the state of the network connection and respond to changes -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required to check whether Wi-Fi is enabled -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.MyFirstApp">
+        <activity
+            android:name=".activity.LockPatterViewKTActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".activity.ndk.MyNDKActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+
+        </activity>
+        <activity
+            android:name=".activity.LockPatternViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VerticalDragListViewActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".activity.SlideMenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LetterSideBarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.StepViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MyDownloaderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.CalendarViewTwoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.CalendarViewActivity"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".activity.ibeacon.IBeaconActivity" -->
+        <!-- android:exported="true" /> -->
+        <activity
+            android:name=".activity.TestFragmentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".multiThreading.MultiTaskActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.mvp.MVPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SecondActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity> <!-- <receiver -->
+        <!-- android:name=".widgetProvider.BusWidgetProvider" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.appwidget.action.APPWIDGET_UPDATE" /> -->
+        <!-- &lt;!&ndash; ListWidgetProvider接收点击bt_refresh的响应事件 &ndash;&gt; -->
+        <!-- <action android:name="com.cs" /> -->
+        <!-- </intent-filter> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.appwidget.provider" -->
+        <!-- android:resource="@xml/widget_bus" /> -->
+        <!-- </receiver> -->
+        <activity
+            android:name="com.example.networktest.activity.NetworkActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name="com.example.networktest.activity.PostActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name="com.example.networktest.activity.OkHttpActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".widgetProvider.BusWidgetProvider"
+            android:exported="true"
+            android:label="丰付宝快捷">
+            <intent-filter>
+
+                <!-- AppWidget更新注册广播 -->
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <!-- AppWidget交互事件广播 -->
+                <action android:name="android.appwidget.action.GOD_DAVID_GTIDVIEW" />
+                <action android:name="android.appwidget.action.GOD_DAVID_REFRESH" />
+                <action android:name="android.appwidget.action.GOD_DAVID_START_ACTIVITY" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_bus" />
+        </receiver>
+        <receiver
+            android:name=".widgetProvider.BusWidgetProvider2"
+            android:exported="true"
+            android:label="乘车码">
+            <intent-filter>
+
+                <!-- AppWidget更新注册广播 -->
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <!-- AppWidget交互事件广播 -->
+                <action android:name="android.appwidget.action.GOD_DAVID_GTIDVIEW" />
+                <action android:name="android.appwidget.action.GOD_DAVID_REFRESH" />
+                <action android:name="android.appwidget.action.GOD_DAVID_START_ACTIVITY" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_bus2" />
+        </receiver>
+        <receiver
+            android:name=".widgetProvider.BusWidgetProvider3"
+            android:exported="true"
+            android:label="付款码">
+            <intent-filter>
+
+                <!-- AppWidget更新注册广播 -->
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <!-- AppWidget交互事件广播 -->
+                <action android:name="android.appwidget.action.GOD_DAVID_GTIDVIEW" />
+                <action android:name="android.appwidget.action.GOD_DAVID_REFRESH" />
+                <action android:name="android.appwidget.action.GOD_DAVID_START_ACTIVITY" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_bus3" />
+        </receiver> <!-- <service android:name=".widgetProvider.MyService" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.appwidget.action.GOD_DAVID_MYSERVICE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <service android:name=".downloaderLibrary.MyDownloaderService" />
+
+        <receiver android:name=".downloaderLibrary.MyAlarmReceiver" />
+    </application>
+
+</manifest>

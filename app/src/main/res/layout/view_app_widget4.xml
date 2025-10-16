@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_edit">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="付款码"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/img_scan"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_scan" />
+
+    </LinearLayout>
+
+</LinearLayout>

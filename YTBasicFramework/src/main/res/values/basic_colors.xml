@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   	<!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <!-- 半透明 -->
+    <color name="half_transparent">#90000000</color>
+    
+    <!-- 黑色 -->
+    <color name="m_black">#000000</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    
+  	<!-- 灰色 --> 
+    <color name="gray">#808080</color>
+    <!-- 亮灰色 -->  
+    <color name="light_gray">#D3D3D3</color>
+    <!-- 暗灰色 -->    
+    <color name="dark_gray">#ff585858</color>
+    
+   	<!-- 红色 -->
+    <color name="red">#FF0000</color>
+    
+  	<!-- 橙色 -->   
+    <color name="orange">#FFA500</color>
+	<!-- 暗桔黄色 -->
+    <color name="dark_orange">#FF8C00</color>
+    
+   	<!-- 黄色 --> 
+    <color name="yellow">#FFFF00</color>
+    <!-- 亮黄色 -->   
+    <color name="light_yellow">#FFFFE0</color>
+	
+	<!-- 绿色 -->
+    <color name="green">#008000</color>
+    <!-- 亮绿色 -->
+    <color name="light_green">#90EE90</color>
+    <!-- 暗绿色 -->    
+    <color name="dark_green">#006400</color>
+    
+	<!-- 青色 -->
+    <color name="cyan">#00FFFF</color>
+    <!-- 亮青色 -->
+ 	<color name="light_cyan">#E0FFFF</color>
+    
+   	<!-- 蓝色 -->
+    <color name="blue">#0000FF</color>
+    <!-- 亮蓝色 -->
+    <color name="light_blue">#ADD8E6</color>
+    <!-- 暗蓝色 -->
+    <color name="dark_blue">#00008B</color>
+    
+    <!-- 紫色 -->
+    <color name="purple">#800080</color>
+    
+    <!-- 粉红色 -->
+    <color name="pink">#FFC0CB</color>
+    <!-- 亮粉红色 -->
+    <color name="light_pink">#FFB6C1</color>
+    <!-- 暗粉红色 -->
+    <color name="dark_pink">#FF1493</color>
+    
+	<!-- 橄榄色 -->
+    <color name="olive">#808000</color>
+
+ 	<!-- 棕色 -->
+    <color name="brown">#A52A2A</color>
+    <!-- 雪白色 -->
+   	<color name="snow">#FFFAFA</color>
+    <!-- 金色 -->
+    <color name="gold">#FFD700</color>
+
+</resources>

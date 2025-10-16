@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 手势密码 -->
+    <color name="default_normal_line_color">@android:color/holo_blue_light</color>
+    <color name="default_wrong_line_color">#ff0000</color>
+
+</resources>

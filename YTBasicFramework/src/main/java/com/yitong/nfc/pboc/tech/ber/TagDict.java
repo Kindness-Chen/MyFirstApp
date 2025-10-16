@@ -1,0 +1,155 @@
+package com.yitong.nfc.pboc.tech.ber;
+
+/**
+ * 标签字典项
+ * <p>
+ * Created by 左克飞 on 2016/11/24 18:41.
+ * e-mail:zkf@yitong.com.cn
+ * FilePath NFCDemo:com.yitong.nfc2_0.pboc.tech.ber
+ */
+
+public final class TagDict {
+    public static final byte TAG_42 = (byte) 0x42;//行业识别码(IIN)
+    public static final byte TAG_4F = (byte) 0x4F;//应用标识符(AID)-卡片
+    public static final byte TAG_50 = (byte) 0x50;//应用标签
+    public static final byte TAG_57 = (byte) 0x57;//二磁道等效数据
+    public static final byte TAG_5A = (byte) 0x5A;//账号 PAN
+    public static final byte TAG_61 = (byte) 0x61;//应用模板
+    public static final byte TAG_6F = (byte) 0x6F;//FCI(文件控制信息)模板
+    public static final byte TAG_70 = (byte) 0x70;//支付系统目录记录
+    public static final byte TAG_71 = (byte) 0x71;//71脚本数据
+    public static final byte TAG_72 = (byte) 0x72;//72脚本数据
+    public static final byte TAG_73 = (byte) 0x73;//目录自定义模板
+    public static final byte TAG_80 = (byte) 0x80;//基本数据对象
+    public static final byte TAG_82 = (byte) 0x82;//应用交互特征 AIP
+    public static final byte TAG_83 = (byte) 0x83;//命令模版
+    public static final byte TAG_84 = (byte) 0x84;//DF(专用文件)名
+    public static final byte TAG_87 = (byte) 0x87;//应用优先指示符
+    public static final byte TAG_88 = (byte) 0x88;//目录基本文件的SFI(短文件标识符)
+    public static final byte TAG_8A = (byte) 0x8A;//授权响应码
+    public static final byte TAG_8C = (byte) 0x8C;//卡片风险管理数据对象列表1(CDOL1)
+    public static final byte TAG_8D = (byte) 0x8D;//CDOL2
+    public static final byte TAG_8E = (byte) 0x8E;//持卡人认证方法列表
+    public static final byte TAG_8F = (byte) 0x8F;//认证中心公钥索引
+    public static final byte TAG_90 = (byte) 0x90;//发卡行公钥（IPK）证书
+    public static final byte TAG_91 = (byte) 0x91;//发卡行授权数据
+    public static final byte TAG_92 = (byte) 0x92;//IPK余项
+    public static final byte TAG_93 = (byte) 0x93;//签名静态应用数据
+    public static final byte TAG_94 = (byte) 0x94;//AFL
+    public static final byte TAG_95 = (byte) 0x95;//终端验证结果TVR
+    public static final byte TAG_97 = (byte) 0x97;//TDOL
+    public static final byte TAG_98 = (byte) 0x98;//交易证书(TC) 哈希值
+    public static final byte TAG_99 = (byte) 0x99;//联机PIN密文
+    public static final byte TAG_9A = (byte) 0x9A;//交易日期
+    public static final byte TAG_9B = (byte) 0x9B;//交易状态信息
+    public static final byte TAG_9C = (byte) 0x9C;//交易类型
+    public static final byte TAG_9D = (byte) 0x9D;//目录定义文件(DDF)名 称
+    public static final byte TAG_A5 = (byte) 0xA5;//FCI数据专用模板
+    public static final short TAG_5F20 = (short) 0x5F20;//持卡人姓名
+    public static final short TAG_5F24 = (short) 0x5F24;//失效日期
+    public static final short TAG_5F25 = (short) 0x5F25;// 生效日期
+    public static final short TAG_5F28 = (short) 0x5F28;// 发卡行国家代码
+    public static final short TAG_5F2A = (short) 0x5F2A;// 交易货币代码
+    public static final short TAG_5F2D = (short) 0x5F2D;//首选语言
+    public static final short TAG_5F30 = (short) 0x5F30;//服务码
+    public static final short TAG_5F34 = (short) 0x5F34;//PAN序列号
+    public static final short TAG_5F36 = (short) 0x5F36;//交易货币指数
+    public static final short TAG_5F50 = (short) 0x5F50;//发卡行 URL
+    public static final short TAG_5F53 = (short) 0x5F53;//国际银行账号(IBAN)
+    public static final short TAG_5F54 = (short) 0x5F54;//银行标识符代码(BIC）
+    public static final short TAG_5F55 = (short) 0x5F55;//发卡行国家代码(alpha2 格式)
+    public static final short TAG_5F56 = (short) 0x5F56;//发卡行国家代码(alpha3 格式)
+    public static final short TAG_5F57 = (short) 0x5F57;//账户类型
+    public static final short TAG_9F02 = (short) 0x9F02;//授权金额
+    public static final short TAG_9F03 = (short) 0x9F03;//其他金额
+    public static final short TAG_9F05 = (short) 0x9F05;//应用自定义数据
+    public static final short TAG_9F06 = (short) 0x9F06;//应用标识符 (AID)-终端
+    public static final short TAG_9F07 = (short) 0x9F07;//应用使用控制
+    public static final short TAG_9F08 = (short) 0x9F08;//应用版本号 卡片
+    public static final short TAG_9F09 = (short) 0x9F09;//应用版本号 终端
+    public static final short TAG_9F0B = (short) 0x9F0B;//持卡人姓名扩展 (27-45)
+    public static final short TAG_9F0C = (short) 0x9F0C;//卡片发行基本数据文件
+    public static final short TAG_9F0D = (short) 0x9F0D;//IAC——缺省
+    public static final short TAG_9F0E = (short) 0x9F0E;//IAC——拒绝
+    public static final short TAG_9F0F = (short) 0x9F0F;//IAC——联机
+    public static final short TAG_9F10 = (short) 0x9F10;//发卡行应用数据
+    public static final short TAG_9F11 = (short) 0x9F11;//发卡行代码表索引
+    public static final short TAG_9F12 = (short) 0x9F12;//应用优先名称
+    public static final short TAG_9F13 = (short) 0x9F13;//联机ATC
+    public static final short TAG_9F14 = (short) 0x9F14;//连续脱机交易下限 (终端频度检查)
+    public static final short TAG_9F15 = (short) 0x9F15;//商户分类码
+    public static final short TAG_9F16 = (short) 0x9F16;//商户标识
+    public static final short TAG_9F1A = (short) 0x9F1A;//终端国家代码
+    public static final short TAG_9F1B = (short) 0x9F1B;//终端最低限额
+    public static final short TAG_9F1C = (short) 0x9F1C;//终端标识
+    public static final short TAG_9F1E = (short) 0x9F1E;//接口设备(IFD) 序列号
+    public static final short TAG_9F1F = (short) 0x9F1F;//1磁道自定义数据
+    public static final short TAG_9F21 = (short) 0x9F21;//交易时间
+    public static final short TAG_9F22 = (short) 0x9F22;//认证中心公钥索引 终端
+    public static final short TAG_9F23 = (short) 0x9F23;//连续脱机交易上限 (终端频度检查)
+    public static final short TAG_9F26 = (short) 0x9F26;//应用密文 AC
+    public static final short TAG_9F27 = (short) 0x9F27;//密文信息类型 CID
+    public static final short TAG_9F32 = (short) 0x9F32;//IPK指数
+    public static final short TAG_9F33 = (short) 0x9F33;//终端性能
+    public static final short TAG_9F34 = (short) 0x9F34;//持卡人验证（CVM）结果
+    public static final short TAG_9F35 = (short) 0x9F35;//终端类型
+    public static final short TAG_9F36 = (short) 0x9F36;//应用交易序号ATC
+    public static final short TAG_9F37 = (short) 0x9F37;//随机数 不可预支数
+    public static final short TAG_9F38 = (short) 0x9F38;//PDOL(处理选项数据对象列表)
+    public static final short TAG_9F39 = (short) 0x9F39;//销售点(POS)输 入方式
+    public static final short TAG_9F3C = (short) 0x9F3C;//交易参考货币代 码
+    public static final short TAG_9F3D = (short) 0x9F3D;//交易参考货币指 数
+    public static final short TAG_9F41 = (short) 0x9F41;//交易序列计数器
+    public static final short TAG_9F42 = (short) 0x9F42;//应用货币代码
+    public static final short TAG_9F44 = (short) 0x9F44;//应用货币指数
+    public static final short TAG_9F46 = (short) 0x9F46;//ICC公钥证书
+    public static final short TAG_9F47 = (short) 0x9F47;//ICC公钥指数
+    public static final short TAG_9F48 = (short) 0x9F48;//ICC公钥余项
+    public static final short TAG_9F49 = (short) 0x9F49;//DDOL
+    public static final short TAG_9F4A = (short) 0x9F4A;//SDA 标签列表
+    public static final short TAG_9F4B = (short) 0x9F4B;//签名的动态应用数据
+    public static final short TAG_9F4D = (short) 0x9F4D;//日志文件ID
+    public static final short TAG_9F4E = (short) 0x9F4E;//商户名称(在交易记录中，做终端机编号，文档未做说明)
+    public static final short TAG_9F4F = (short) 0x9F4F;//日志文件格式E
+    public static final short TAG_9F51 = (short) 0x9F51;//货币代码
+    public static final short TAG_9F52 = (short) 0x9F52;//应用默认行为(ADA)
+    public static final short TAG_9F53 = (short) 0x9F53;//连续脱机交易限制, 国际
+    public static final short TAG_9F54 = (short) 0x9F54;//累计脱机交易金额限 制
+    public static final short TAG_9F56 = (short) 0x9F56;//发卡行认证指示位
+    public static final short TAG_9F57 = (short) 0x9F57;//发卡行国家代码
+    public static final short TAG_9F58 = (short) 0x9F58;//连续脱机交易下限 (终端频度检查)
+    public static final short TAG_9F59 = (short) 0x9F59;//连续脱机交易上限 (终端频度检查)
+    public static final short TAG_9F5C = (short) 0x9F5C;//累计脱机交易金额上 限
+    public static final short TAG_9F5D = (short) 0x9F5D;//可用脱机消费金额
+    public static final short TAG_9F61 = (short) 0x9F61;//持卡人证件号
+    public static final short TAG_9F62 = (short) 0x9F62;//持卡人证件类型
+    public static final short TAG_9F63 = (short) 0x9F63;//产品标识信息
+    public static final short TAG_9F66 = (short) 0x9F66;//终端交易属性
+    public static final short TAG_9F6C = (short) 0x9F6C;//卡片交易属性
+    public static final short TAG_9F6D = (short) 0x9F6D;//电子现金重置阈值
+    public static final short TAG_9F72 = (short) 0x9F72;//连续脱机交易限制, 国际(国家)
+    public static final short TAG_9F73 = (short) 0x9F73;//货币兑换因子
+    public static final short TAG_9F74 = (short) 0x9F74;//电子现金发卡行授权码
+    public static final short TAG_9F75 = (short) 0x9F75;//累计脱机交易金额限 制(双重货币)
+    public static final short TAG_9F76 = (short) 0x9F76;//第二应用货币代码
+    public static final short TAG_9F77 = (short) 0x9F77;//电子现金余额上限
+    public static final short TAG_9F78 = (short) 0x9F78;//电子现金单笔上限
+    public static final short TAG_9F79 = (short) 0x9F79;//电子现金余额
+    public static final short TAG_BF0C = (short) 0xBF0C;//发卡行自定义数据FCI
+    public static final short TAG_DF31 = (short) 0xDF31;//脚本执行结果
+    public static final short TAG_DF4D = (short) 0xDF4D;//圈存日志入口
+    public static final short TAG_DF4F = (short) 0xDF4F;//圈存日志格式
+    public static final short TAG_DF60 = (short) 0xDF60;//CAPP 交易指 示位
+    public static final short TAG_DF61 = (short) 0xDF61;//分段扣费应 用标识
+    public static final short TAG_DF62 = (short) 0xDF62;//电子现金分 段扣费抵扣 限额
+    public static final short TAG_DF63 = (short) 0xDF63;//电子现金分 段扣费已抵 扣额
+    public static final short TAG_DF69 = (short) 0xDF69;//SM算法支持指示器
+    public static final short TAG_DF71 = (short) 0xDF71;//第二币种电子现金应用货币代码
+    public static final short TAG_DF72 = (short) 0xDF72;//第二币种卡片 CVM 限额
+    public static final short TAG_DF76 = (short) 0xDF76;//第二币种电子现金重置阈值
+    public static final short TAG_DF77 = (short) 0xDF77;//第二币种电子现金余额上限
+    public static final short TAG_DF78 = (short) 0xDF78;//第二币种电子现金单笔交易限额
+    public static final short TAG_DF79 = (short) 0xDF79;//第二币种电子现金余额
+
+
+}

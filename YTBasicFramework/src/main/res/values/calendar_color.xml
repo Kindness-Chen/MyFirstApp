@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Calendar_WeekBgColor">#E9EAEA</color>
+    <color name="Calendar_WeekFontColor">#8C8A8C</color>
+    <color name="Calendar_DayBgColor">#F7F7F7</color>
+    <color name="isHoliday_BgColor">#E0E0E0</color>
+
+    <color name="currentmonth_textcolor">#707f93</color>
+    <color name="othermonth_textcolor">#a5b0be</color>
+    <color name="isToday_BgColor">#8ABD3F</color>
+
+    <color name="specialReminder">#FF0000</color>
+    <color name="commonReminder">#BDBAB5</color>
+
+    <color name="moneyout">#fa9841</color>
+    <color name="moneyout2">#81bb30</color>
+    <color name="moneyin">#709dda</color>
+
+    <color name="currentmonth_biankuang">#bbbfc4</color>
+    <color name="othermonth_biankuang">#e1e2e4</color>
+</resources>

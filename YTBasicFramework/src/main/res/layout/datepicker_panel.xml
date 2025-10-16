@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayout_keyboard_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center_horizontal|bottom"
+    android:orientation="vertical" >
+	
+    <!-- 时间控件头部 -->
+	<FrameLayout
+	    android:id="@+id/flayout_datepicker_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    <include layout="@layout/datepicker_title" />
+	</FrameLayout>
+	
+	<!-- 时间控件内容容器 -->
+	<FrameLayout
+	    android:id="@+id/flayout_datepicker_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >	    
+		<!-- 不同选择组件布局 -->
+<!-- 		<include layout="@layout/datepicker_time" /> -->
+	</FrameLayout>
+
+</LinearLayout>

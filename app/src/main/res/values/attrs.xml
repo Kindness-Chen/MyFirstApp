@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StepView">
+        <attr name="border_width" format="dimension" />
+        <attr name="outer_circle_color" format="color" />
+        <attr name="inner_circle_color" format="color" />
+        <attr name="step_count_text_size" format="dimension" />
+        <attr name="step_count_text_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SlideMenuView">
+        <attr name="menuMarginRight" format="dimension" />
+    </declare-styleable>
+</resources>
