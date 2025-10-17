@@ -18,6 +18,9 @@
         <activity
             android:name=".activity.OkHttpActivity"
             android:exported="true" />
+        <activity
+            android:name=".activity.RetrofitActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
