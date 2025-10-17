@@ -80,12 +80,12 @@ public class OkHttpActivity extends AppCompatActivity {
 
         btn = findViewById(R.id.okHttp);
         btn.setOnClickListener(v -> {
-            okHttpRequest();
+            //okHttpRequest();
         });
 
         btn2 = findViewById(R.id.okHttpPost);
         btn2.setOnClickListener(v -> {
-            okHttpRequestPost();
+            //okHttpRequestPost();
         });
 
         btn3 = findViewById(R.id.uploadFile);
