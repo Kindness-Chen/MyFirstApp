@@ -80,12 +80,12 @@ public class OkHttpActivity extends AppCompatActivity {
 
         btn = findViewById(R.id.okHttp);
         btn.setOnClickListener(v -> {
-            //okHttpRequest();
+            //这个是远程
         });
 
         btn2 = findViewById(R.id.okHttpPost);
         btn2.setOnClickListener(v -> {
-            //okHttpRequestPost();
+            okHttpRequestPost2();
         });
 
         btn3 = findViewById(R.id.uploadFile);
