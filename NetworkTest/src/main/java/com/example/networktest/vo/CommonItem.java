@@ -7,27 +7,35 @@ package com.example.networktest.vo;
  */
 public class CommonItem {
 
-    private String id;
-    private String comment;
+    @Override
+    public String toString() {
+        return "CommonItem{" +
+                "articleId='" + articleId + '\'' +
+                ", commentContent='" + commentContent + '\'' +
+                '}';
+    }
+
+    private String articleId;
+    private String commentContent;
 
     public CommonItem(String id, String comment) {
-        this.id = id;
-        this.comment = comment;
+        this.articleId = id;
+        this.commentContent = comment;
     }
 
-    public String getId() {
-        return id;
+    public String getArticleId() {
+        return articleId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setArticleId(String articleId) {
+        this.articleId = articleId;
     }
 
-    public String getComment() {
-        return comment;
+    public String getCommentContent() {
+        return commentContent;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setCommentContent(String commentContent) {
+        this.commentContent = commentContent;
     }
 }
