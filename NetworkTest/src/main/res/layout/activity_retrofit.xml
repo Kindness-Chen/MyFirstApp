@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_retrofit_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_retrofit_get"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_retrofit_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_retrofit_page"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_retrofit_page_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_retrofit_page_map"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_retrofit_post_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofitPostString"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_retrofit_post_string_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofitPostStringUrl"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_retrofit_post_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofitPostBody"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_retrofit_post_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofitPostFile"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_retrofit_post_files"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofitPostFiles"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_retrofit_post_file_params"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofitPostFileParams"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_retrofit_post_filed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofitPostFiled"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_retrofit_download_filed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofitDownloadFiled"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>
